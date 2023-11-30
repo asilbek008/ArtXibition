@@ -1,0 +1,493 @@
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 10px 10px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+/* =====================================  NAVBAR =============================================================== */
+
+.navbar {
+  background-color: rgb(244, 236, 226);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 700;
+}
+.logo > span {
+  color: grey;
+}
+
+.navigation {
+  display: flex;
+  /* gap: 25px; */
+}
+
+.link {
+  color: grey;
+  text-align: center;
+  padding: 5px 25px;
+  position: relative;
+}
+
+.link:hover {
+  color: black;
+}
+
+/* =======================================  DROP - DOWN ============================================== */
+
+.drop-down {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.605);
+  top: 100%;
+  left: 0;
+  width: 100%;
+  display: none;
+}
+
+.drop-down > li {
+  padding: 10px 12px;
+}
+
+.drop-down > li:hover {
+  background-color: rgba(237, 221, 201, 0.667);
+  color: white;
+}
+
+.link:hover > .drop-down {
+  display: block;
+}
+
+/* -----------------------================= HEADER ===============================------------------------ */
+
+.header {
+  background-image: url("./images/960__80_3501781727.jpg");
+  background-position: bottom;
+  background-size: cover;
+  box-shadow: inset 0 120vh rgba(0, 0, 0, 0.438);
+  text-align: center;
+  padding-bottom: 200px;
+  color: white;
+}
+
+.time {
+  background-color: rgba(193, 192, 192, 0.363);
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 180px;
+  margin-bottom: 200px;
+}
+
+.time > p {
+  text-align: center;
+  color: white;
+  font-weight: 700;
+}
+
+.time > p > span {
+  display: block;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.header > p {
+  margin: 0 0 30px 0;
+  font-size: 18px;
+}
+
+.header > h1 {
+  font-size: 45px;
+  margin-bottom: 30px;
+}
+
+.header > button {
+  outline: 0px solid transparent;
+  border: none;
+  padding: 12px 35px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 17px;
+}
+
+.header > button:hover {
+  background-color: antiquewhite;
+}
+
+/* ===============================  VENUES ============================================================= */
+
+.venues {
+  position: relative;
+  padding: 180px 0 150px 0;
+}
+.gallery {
+  position: absolute;
+  top: -60px;
+  left: 15%;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.gallery > div {
+  width: 200px;
+  height: 150px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.gallery > div:hover {
+  box-shadow: 0 0 12px black;
+}
+
+.gallery > div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.venues-infos {
+  display: flex;
+  gap: 100px;
+}
+
+.venues-infos h3 {
+  margin-bottom: 25px;
+}
+
+.venues-infos p {
+  color: grey;
+  margin-bottom: 18px;
+}
+
+.venues-infos p > span {
+  color: blue;
+}
+
+/* =================================  ART-HALL =========================================== */
+.art-hall {
+  width: 100%;
+  height: 650px;
+  box-shadow: inset 0 100vh rgba(250, 249, 249, 0.651);
+  background-image: url("./images/map.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.circle {
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+}
+
+.circle > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.royce-hall {
+  width: 85px;
+  height: 85px;
+  top: 65%;
+  left: 33%;
+}
+
+.madison {
+  width: 180px;
+  height: 180px;
+  top: 35%;
+  left: 41%;
+}
+
+.radio-city {
+  width: 220px;
+  height: 220px;
+  top: 45%;
+  left: 62%;
+}
+
+/* ====================================== OUR VENUES AND TICKETS ==================================== */
+
+.tickets-card {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 35px;
+}
+
+.our-venues-and-tickets {
+  padding: 50px 0 0 0;
+}
+
+.our-venues-and-tickets > h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 35px;
+}
+
+.tickets-card-item {
+  width: 450px;
+  overflow: hidden;
+}
+
+.venues-image {
+  width: 100%;
+  height: 400px;
+}
+.venues-image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tickets-infos {
+  background-color: grey;
+
+  color: white;
+  display: flex;
+  gap: 20px;
+}
+
+.discover {
+  padding: 0 15px;
+  background-color: rgb(158, 156, 156);
+}
+
+.discover > button {
+  outline: 0px solid transparent;
+  background-color: white;
+  border: none;
+  padding: 8px 30px;
+  font-size: 16px;
+  transform: rotate(-90deg);
+  margin-top: 100px;
+}
+
+/* .tickets-infos-texts > h3 {
+} */
+.tickets-infos-texts > span {
+  display: block;
+}
+
+.tickets-infos-texts > p {
+  color: rgb(227, 225, 225);
+  margin: 15px 0;
+}
+
+.tickets-infos-texts {
+  padding: 25px 0;
+}
+
+.ticket-price {
+  margin-top: 10px;
+  width: 120px;
+  padding: 10px 20px;
+  background-color: rgb(177, 177, 177);
+}
+
+.ticket-price > span {
+  font-size: 25px;
+}
+.venues-hall-infos {
+  display: flex;
+  background-color: grey;
+  margin-top: 40px;
+}
+.discover-button {
+  background-color: rgb(177, 177, 177);
+  padding: 0 30px;
+}
+.discover-button > button {
+  outline: none;
+  border: none;
+  color: black;
+  width: 150px;
+  padding: 12px 40px;
+  font-size: 17px;
+  transform: rotate(-90deg);
+  margin-top: 160%;
+}
+.venues-hall-card {
+  gap: 55px;
+  display: flex;
+  padding: 80px 30px;
+}
+.venues-hall-card-item {
+  background-color: #fff;
+  color: black;
+  width: 350px;
+  padding-bottom: 25px;
+}
+.hall-card-item-image {
+  width: 100%;
+  height: 250px;
+}
+.hall-card-item-image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.venues-hall-card-item > h3 {
+  margin: 25px 0px 20px 20px;
+  font-size: 25px;
+}
+
+.venues-hall-card-item > p {
+  margin: 12px 0px 0 20px;
+  color: grey;
+}
+
+/* ================================================================= START FORM   ============================================ */
+.form {
+  display: flex;
+  align-items: center;
+  padding: 30px 130px 30px 250px;
+  background-color: rgb(156, 155, 155);
+}
+.form > label {
+  color: white;
+  font-size: 21px;
+  font-weight: bold;
+  margin: 0 200px 0 0 150px;
+}
+.form > input {
+  margin: 0 50px 0 250px;
+  width: 400px;
+  outline: none;
+  background-color: inherit;
+  border: none;
+  border-bottom: 1px solid black;
+  color: white;
+  font-size: 17px;
+  padding: 8px 12px;
+}
+form > input::placeholder {
+  font-size: 17px;
+  color: white;
+}
+.form > button {
+  outline: none;
+  border: none;
+  background-color: black;
+  padding: 15px 40px;
+  color: white;
+  font-size: 17px;
+}
+/* ===================================== END OF FORM ============================================= */
+
+/* ======================================= START FOOTER-NAVBAR ================================== */
+
+.footer-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 700;
+}
+.logo > span {
+  color: grey;
+}
+
+.navigation {
+  display: flex;
+  gap: 25px;
+}
+
+.footer-link {
+  color: grey;
+  text-align: center;
+  position: relative;
+  font-size: 19px;
+}
+
+.footer-link:hover {
+  color: black;
+}
+.about-fest {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0 30px 0;
+}
+.about-fest > div > h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.address > p {
+  width: 150px;
+  color: grey;
+  line-height: 25px;
+}
+.use-links {
+  text-align: center;
+}
+.use-links > li {
+  margin-bottom: 8px;
+  color: rgb(219, 211, 211);
+}
+.use-links li:hover {
+  color: #000;
+}
+.open-hours {
+  text-align: right;
+}
+.open-hours > p {
+  margin-bottom: 15px;
+  color: grey;
+}
+.dev-company {
+  display: flex;
+  justify-content: space-between;
+  color: grey;
+  margin: 30px 0 50px 0;
+}
+.dev-company > p:nth-child(2) {
+  width: 250px;
+  text-align: right;
+}
+.dev-company span {
+  color: blue;
+}
+.icons {
+  margin-right: 50px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.icons li {
+  padding: 2px 1px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: black;
+}
